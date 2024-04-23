@@ -13,15 +13,22 @@ blogSubmit.addEventListener("submit", function (event) {
         title,
         content,
     }
+
     // JSON.parse is a static method parses a JSON string, constructing
     // the js value/object described by the string.
     // grabs "blogs" from local storage
     const blogs = JSON.parse(localStorage.getItem("blogs")) || [];
+
+
     // pushes new values into an array/object (const blog LN 11)
+
     blogs.push(blog);
+
     // stringify converts a js value into a JSON string LN 19
     // .setItem when passed a key name and value, will add that key to the given Storage object, or update that key's value if it already exists.
     localStorage.setItem("blogs", JSON.stringify(blogs));
+
     // this redirects you to another webpage
+
     location.href = "blog.html";
 });
