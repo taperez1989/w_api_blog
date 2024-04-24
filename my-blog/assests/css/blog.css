@@ -1,0 +1,37 @@
+body, html {
+    display: block;
+    margin: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-decoration: underline;
+}
+.content {
+    display: flex;
+    height: 150px;
+    border-style: inset;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.dark {
+    background-color: #243447;
+    height: 100vh;
+    color: #bebebe
+}
+
+.light {
+    background-color: #f0ead6;
+    color: black;
+    height: 100vh;
+}
+
+#back-button {
+    position: relative;
+    display: inline-block;
+    left: 90%;
+    width: 70px;
+}
