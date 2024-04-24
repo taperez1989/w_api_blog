@@ -1,0 +1,28 @@
+body,
+html {
+    display: block;
+    margin: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    height: 100px;
+    border-style: outset;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.formSub {
+    width: fit-content;
+}
+
+#blog-submit {
+    display: grid;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    font-weight: bolder;
+}
