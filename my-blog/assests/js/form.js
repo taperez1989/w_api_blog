@@ -1,8 +1,42 @@
 // This grabs the form element by its unique ID
+
+
 const blogSubmit = document.getElementById("blog-submit");
 // by using "submit" instead of "click" its listening specifically for the submit button event vs a click event any where on the page 
 blogSubmit.addEventListener("submit", function (event) {
     event.preventDefault()
+
+    // let blogSubmit = true
+
+    // if (blogSubmit !== true) {
+    //     window.alert("fill form");
+    // };
+
+
+//     const fillForm = function () {
+//         const blog = {};
+//         let fillForm = true;
+
+//         while (fillForm) {
+//             userName = "";
+//             title = "";
+//             content = "";
+//             fillForm = window.alert("Please fill form");
+
+//         };
+// }
+
+
+
+
+
+
+
+
+
+
+
+
 // grabs all the values submitted from the form tag in html
     const userName = document.getElementById("userName").value;
     const title = document.getElementById("title").value;
