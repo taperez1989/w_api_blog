@@ -10,25 +10,19 @@
 </head>
 
 <body>
-    <header>
+    <header class="container-dark">
         <h1>My first blog</h1>
         <button type="submit" id="back-button">Back</button>
     </header>
-    <section class="dark mode">
-        <div>
-            <p>Dark Mode</p>
-        </div>
-        <div>
-            <label>
-                <input type= "checkbox" id="theme">
-            </label>
-            <div>
-                <p>Light Mode</p>
-            </div>
-        </div>
-    </section>
+    <div class="container-dark">
+        <label for="Ld-mode" class="container-dark">Theme</label>
+        <select name="Ld-mode" id="ld-mode">
+            <option value="Light-mode" id="Light-mode">Light mode</option>
+            <option value="Dark-mode" id="Dark-mode">Dark mode</option>
+        </select>
+    </div>
 </body>
-<footer>
+<footer class="footer">
     <ul>
         <li><a href="#" id="Port">Portfolio</a></li>
     </ul>
