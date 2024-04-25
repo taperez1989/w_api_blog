@@ -1,4 +1,6 @@
-body,
+body {
+    border-style: inset;
+}
 html {
     display: block;
     margin: 0px;
@@ -13,6 +15,12 @@ header {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+
+#logo {
+    width: fit-content;
+    position: relative;
+    left: 175px;
 }
 
 .formSub {
