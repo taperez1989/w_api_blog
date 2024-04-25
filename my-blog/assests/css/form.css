@@ -27,7 +27,7 @@ header {
     width: fit-content;
 }
 
-#blog-submit {
+#content-submit {
     display: grid;
     flex-direction: column;
     justify-content: flex-start;

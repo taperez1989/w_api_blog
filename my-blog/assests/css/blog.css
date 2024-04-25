@@ -1,4 +1,4 @@
-body, html {
+ html {
     display: block;
     margin: 0px;
     margin: 0;
@@ -8,7 +8,7 @@ body, html {
 h2 {
     text-decoration: underline;
 }
-.content {
+.posts {
     display: flex;
     height: 150px;
     border-style: inset;
