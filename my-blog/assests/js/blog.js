@@ -3,6 +3,9 @@ const mainEl = document.querySelector("main");
 
 // for loop to .getItem("blogs") and populate html
 
+// gives function to the back button
+
+
 
 // i starts at 0, i is less than the length of array of objects, add one to i as it loops through.
 for (let i = 0; i < blogs.length; i++) {
@@ -22,8 +25,6 @@ for (let i = 0; i < blogs.length; i++) {
     sectionEl.append(divEl);
     mainEl.append(sectionEl);
 
-    // document.getElementById('title').innerText = blog.title;
-    // document.getElementById('userName').innerText = blog.userName;
     
     // h2El.setAttribute( 'class', blog.userName);
     sectionEl.setAttribute('class', 'posts');
@@ -32,10 +33,23 @@ for (let i = 0; i < blogs.length; i++) {
 };
 console.log('outside loop');
 
-// gives function to the back button
-let backButton = document.getElementById("#back-button");
-backButton=addEventListener('click', function () {
-    location.href = "index.html"
-});
+
+const backButton = document.getElementById("back-button");
+const Port = document.getElementById("Port");
+
+function handleBackbuttonClick(event) {
+    window.history.back();
+}
+
+function handlePortClick(event) {
+    window.open("https://taperez1989.github.io/TP_Dev_Port/");
+}
+
+backButton.addEventListener('click', handleBackbuttonClick);
+Port.addEventListener('click', handlePortClick);
+
+// Port = addEventListener('click', function () {
+    
+// });
 
 // add classes to html and use .setattributes in js to assign the values (username,title,content) to containers within html.
