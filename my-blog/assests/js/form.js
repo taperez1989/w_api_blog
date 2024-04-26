@@ -51,3 +51,18 @@ blogSubmit.addEventListener("submit", function (event) {
 
     location.href = "blog.html";
 });
+
+// light and dark mode
+
+const modeToggle = document.getElementById('Toggle');
+const container = document.querySelector('.container');
+
+Toggle.addEventListener('click', function () {
+    if (container.classList.contains('light')) {
+        container.removeAttribute('class');
+        container.setAttribute('class', 'container dark');
+    } else {
+        container.removeAttribute('class');
+        container.setAttribute('class', 'container light');
+    }
+});
