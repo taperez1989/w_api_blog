@@ -3,10 +3,6 @@ const mainEl = document.querySelector("main");
 
 // for loop to .getItem("blogs") and populate html
 
-// gives function to the back button
-
-
-
 // i starts at 0, i is less than the length of array of objects, add one to i as it loops through.
 for (let i = 0; i < blogs.length; i++) {
     const blog = blogs[i];
@@ -37,10 +33,12 @@ console.log('outside loop');
 const backButton = document.getElementById("back-button");
 const Port = document.getElementById("Port");
 
+// function for back button
 function handleBackbuttonClick(event) {
     window.history.back();
 }
 
+// function portfolio link
 function handlePortClick(event) {
     window.open("https://taperez1989.github.io/TP_Dev_Port/");
 }
@@ -48,8 +46,17 @@ function handlePortClick(event) {
 backButton.addEventListener('click', handleBackbuttonClick);
 Port.addEventListener('click', handlePortClick);
 
-// Port = addEventListener('click', function () {
-    
-// });
+// light and dark mode
 
-// add classes to html and use .setattributes in js to assign the values (username,title,content) to containers within html.
+const modeToggle = document.getElementById('Toggle');
+const container = document.querySelector('.container');
+
+Toggle.addEventListener('click', function () {
+    if (container.classList.contains('light')) {
+        container.removeAttribute('class');
+        container.setAttribute('class', 'container dark');
+    } else {
+        container.removeAttribute('class');
+        container.setAttribute('class', 'container light');
+    }
+});
