@@ -16,7 +16,7 @@ h2 {
     flex-direction: column;
     margin-bottom: 25px;
 }
-
+/* light and dark toggle */
 .container.light {
     background-color: #ffffff;
     color: #000000;
